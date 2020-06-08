@@ -1,0 +1,43 @@
+<!-- HTML that defines the default output for the output window
+     Might add something of a startup page to choose old files, etc. -->
+<html>
+<head>
+  <link rel="stylesheet" href="output.css"/>
+</head>
+<body>
+  <h1> INSTRUCTIONS </h1>
+  <p>
+
+
+    <h2> Running a program: </h2>
+
+    Type in your Fortran 90 program into the Editor Pane on the left (The
+    default is a simple Hello World Program). Click the RUN button on the top
+    left of the Output pane to execute the following three-part command in a
+    terminal window, separated by semicolons: <br><br>
+
+    <code>cd ~/Documents/GitHub/Fossil/test; <br>
+       /usr/local/bin/gfortran -o f [file_name].f90;<br>
+       ./f</code> <br><br>
+
+    The program named <code-inline>file_name</code-inline> is determined with
+    the program name field above the output pane. Change this to match the
+    name given in the editor pane, i.e. <code-inline>PROGRAM [file_name] ...
+      ... END PROGRAM [file_name]</code-inline>.
+
+
+    <h2> Checking Syntax: </h2>
+
+    Using the Syntax header, you can check what your Fortran
+    program looks like under the correct syntax coloring. Clicking the CHECK
+    SYNTAX button again refreshes it with changes made to your editor.
+
+
+    <h2> Links: </h2>
+    <a href="http://github.com/nrwade0/Fossil" target="_blank">
+      GitHub Repo
+    </a>
+
+  </p>
+</body>
+</html>
