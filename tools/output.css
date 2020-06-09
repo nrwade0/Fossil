@@ -31,3 +31,13 @@ code {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+time {
+  font-family: monospace;
+  background-color: #EDEEEF;
+  font-size: 90%;
+}
+pre {
+  color: black;
+  font-family: Helvetica;
+  font-size: 100%;
+}
