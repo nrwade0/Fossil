@@ -1,0 +1,151 @@
+<!--        /////  COMPILE tab in the ABOUT menu  /////
+     This doc is adapted from https://gcc.gnu.org/wiki/GFortranGettingStarted.
+       - Initialized 6-15-2020, essentially copied from url.   -->
+<html>
+<head>
+  <link rel="stylesheet" href="compile_instructions.css"/>
+</head>
+<body>
+
+<!-- 1.0 COMPILE INFORMATION -->
+  <h1> COMPILE INFORMATION </h1>
+  <p>
+    Fossil uses gfortran to compile Fortran programs. These basic tips come from
+     their <a href="https://gcc.gnu.org" target="_blank">website</a>.
+
+
+  <!-- 1.1 COMPILE ONE FILE WITH GFORTRAN -->
+    <h2> Compiling one file with gfortran </h2>
+
+    If your program is only in one file, i.e. any simple code that doesn't
+      require external libraries), the compilation is straightforward: <br><br>
+
+    <code> gfortran file_name.f </code> <br><br>
+
+    gfortran will then create an executable from your code. This executable will
+      be called <code-inline>a.out</code-inline> on unix systems and
+      <code-inline>a.exe</code-inline> on Windows. If you prefer giving it a more
+      appropriate name: you can specify the name you want with the
+      <code-inline>-o</code-inline> option: <br><br>
+
+    <code> gfortran file_name.f -o program </code> <br><br>
+
+
+  <!-- 1.2 STATIC LINKING ONE FILE -->
+    <h2> Getting one file compiled: static linking </h2>
+
+    <em>This section does not apply to Windows users, except for Cygwin users
+      with gcc4-4.3.2-2 or later.</em> <br><br>
+
+    gfortran is composed of two main parts: the compiler, which creates the
+      executable program from your code, and the library, which is used when you
+      run your program afterwards. That explains why, if gfortran is installed in
+      a non-standard directory, it may compile your code fine but the executable
+      may fail with an error message like  <code-inline>library not
+      found</code-inline>. One way to avoid this (more ideas can be found on the
+      binaries page) is to use the so-called "static linking", available with
+      option <code-inline>-static</code-inline>. gfortran then puts the library
+      code inside the program created, thus enabling it to run without the
+      library present (like, on a computer where gfortran is not installed).
+      Complete example is: <br><br>
+
+    <code> gfortran -static myfile.f -o program.exe </code> <br><br>
+
+
+  <!-- 1.3 FILE EXTENSIONS -->
+    <h2> Free-form, fixed-form and file extensions </h2>
+
+    By default, gfortran is aware of a few file extensions, and its action
+      depends on the extension of the file you ask it to compile. Examples:
+
+      <ul>
+        <li>if the file is named <code-inline>code.f</code-inline>, gfortran
+          supposes it is fixed-form source, with no preprocessing needed.</li>
+        <li>if the file is named <code-inline>code.f90</code-inline>, gfortran
+          supposes it is free-form source, with no preprocessing needed.</li>
+        <li>if the file is named <code-inline>code.F</code-inline>, gfortran
+          supposes it is fixed-form source and performs preprocessing.</li>
+        <li>if the file is named <code-inline>code.F90</code-inline>, gfortran
+          supposes it is free-form source and preprocess it.</li>
+      </ul>
+
+    There are other extensions recognized, such as:
+      <code-inline>.f95</code-inline> is the same as
+      <code-inline>.f90</code-inline>  and <code-inline>.F95</code-inline>
+       is the same as <code-inline>.F90</code-inline> <br><br>
+
+    Of course, you can override gfortran's default, with options
+      <code-inline>-ffree-form</code-inline> and
+      <code-inline>-ffixed-form</code-inline>
+      (many gfortran options are named <code-inline>-f=option-name</code-inline>.
+      For example, if you have a free-form code named bessel.f, you can compile
+      it with: <br><br>
+
+    <code> gfortran -ffree-form bessel.f -o bessel.exe </code> <br><br>
+
+
+  <!-- 1.4 COMPILING MORE THAN ONE FILE -->
+    <h2> Compiling programs in more than one file </h2>
+
+    Let's have an example in which the code is split into three different files:
+      <code-inline>aux.f</code-inline>,  <code-inline>diag.f</code-inline>, and
+      <code-inline>flow.f</code-inline>,  with the main program in
+      <code-inline>flow.f</code-inline>.  You need first to compile all files
+      other than the main program into <strong>object files</strong> and then
+      compile the main code together with these object files: <br><br>
+
+    <code>
+    gfortran -c aux.f <br>
+    gfortran -c diag.f <br>
+    gfortran flow.f aux.o diag.o -o flow.exe
+    </code> <br><br>
+
+    The <code-inline>-c</code-inline> option tells gfortran to create an object
+      file (named <code-inline>aux.o</code-inline> if the code was
+      <code-inline>aux.f</code-inline>, to be linked later with the main
+      program. <br><br>
+
+    <code>
+    gfortran flow.f aux.o diag.o -o flow.exe
+    </code> <br><br>
+
+
+  <!-- 1.5 COMPILING WITH EXTERNAL LIBRARIES -->
+    <h2> Compiling programs with external libraries </h2>
+
+
+  <!-- 1.6 STANDARD CONFORMANCE AND OTHER WARNINGS -->
+    <h2> Standard conformance and other warnings </h2>
+
+    The standard against which the compiler will check your code is to be
+      specified with the <code-inline>-std</code-inline> option.
+      Possible values are: <code-inline>f95</code-inline> (Fortran 95),
+      <code-inline>f2003</code-inline> (Fortran 2003),
+      <code-inline>f2008</code-inline> (Fortran 2008),
+      <code-inline>gnu</code-inline> (default, Fortran with GNU extensions), and
+      <code-inline>legacy</code-inline> (which enables all possible extensions,
+      even the ugly, old ones that you probably don't want). To compile
+      Fortran 95 code, for example:
+
+    <code>
+    gfortran -std=f95 mycode.f
+    </code> <br><br>
+
+    A few more switches should be added if you want gfortran to warn you about
+      all possible standard violations: <code-inline>-Wextra</code-inline>,
+      <code-inline>-Wall</code-inline>, and <code-inline>-pendantic</code-inline>.
+      This is <em>highly</em> recommended, enabling you to check for possible
+      errors in your code, such as syntax errors, unused variables, etc.
+      The following is what you should use in most cases:
+
+    <code>
+    gfortran -std=f95 -Wextra -Wall -pedantic mycode.f
+    </code> <br><br>
+
+    Another useful switch is <code-inline>-fbounds-check</code-inline> which
+      causes array indices to be checked. Note that as of this writing,
+      substring operations are <em>not</em> checked.
+
+  </p>
+</body>
+</html>

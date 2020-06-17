@@ -1,0 +1,43 @@
+body {
+  background-color: #FFFBE4;
+  border: 3px solid coral;
+  margin: 10px;
+  padding: 30px;
+}
+h1 {
+  color: black;
+  font-family: Helvetica;
+  font-size: 175%;
+}
+h2 {
+  color: black;
+  font-family: Helvetica;
+  font-size: 125%;
+}
+p {
+  color: black;
+  font-family: Helvetica;
+  font-size: 100%;
+}
+code-inline {
+  font-family: monospace;
+  background-color: #EDEEEF;
+}
+code {
+  font-family: monospace;
+  background-color: #EDEEEF;
+  position: relative;
+  left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+time {
+  font-family: monospace;
+  background-color: #EDEEEF;
+  font-size: 90%;
+}
+pre {
+  color: black;
+  font-family: Helvetica;
+  font-size: 100%;
+}
