@@ -2,6 +2,17 @@
 
 
 ------
+## Version 0.9.1
+June 21, 2020
+
+#### New/Changed Features
+- ...
+
+#### Bugs Fixed
+- ...
+
+
+------
 ## Version 0.9
 June 9, 2020
 
