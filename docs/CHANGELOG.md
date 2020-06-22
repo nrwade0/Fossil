@@ -3,13 +3,17 @@
 
 ------
 ## Version 0.9.1
-June 21, 2020
+June 22, 2020
 
 #### New/Changed Features
-- ...
+- Reorganized `tools` folder each with it's own `styles.css` (although some might not be used): created startup HTML pages for output and syntax panes, developed consantly updated two HTML files for output and syntax panes without saving and deleting revolving `index#.html` files. These files need to be linked to css files or recreated styles altogether
+- Added syntax tab to update when editor pane is clicked into then out of.
+- Also added a keyboard shortcut to the backquote (\`), **when clicked on the Fossil UI**, it will execute the same code as the RUN button.
+- Created drop-down menu to select the file extension.
+- Built the structures for new tabs called `compile options` and `folder tree`.
 
 #### Bugs Fixed
-- ...
+- N/A
 
 
 ------

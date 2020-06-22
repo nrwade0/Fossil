@@ -1,5 +1,7 @@
-# Fossil IDE
+# Fossil
 
- Fortran IDE designed in MATLAB App Designer by an engineer that is tired of the command-line processes involved with learning the antiquated computer language. You can find some more specific documentation regarding Fossil in the `docs` folder, including [`changelog`](docs/CHANGELOG.md), [`future`](docs/FUTURE.md), [`install`](docs/INSTALL.md), and [`bugs`](docs/BUGS.md).
+#### Current version: 0.9.1
+ Fossil is a Fortran IDE designed in MATLAB App Designer by someone eager to learn the antiquated computer language but in an easy and accessible way. More documentation can be found in the `docs` folder, including [`changelog`](docs/CHANGELOG.md), [`future`](docs/FUTURE.md), and [`install`](docs/INSTALL.md).
 
+Here's a picture of my car; a screenshot of Fossil will go here eventually...
  <img align="center" src="res/car.jpg" width="400"/>
