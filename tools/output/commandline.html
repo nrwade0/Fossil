@@ -1,49 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-#prompt {
-  font-family: sans-serif;
-  text-align:center;
-  border-radius: 5px;
-  background-color: lightblue;
-  padding: 20px;
-}
+  <style>
+    body {
+      background-color: #FFFBE4;
+      border: 3px solid coral;
+      margin: 10px;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    #dataDisplay {
+      color: black;
+      font-family: sans-serif;
+      font-size: 95%;
+    }
+    time {
+      font-family: monospace;
+      background-color: #EDEEEF;
+      font-size: 85%;
+    }
+  </style>
+  <script type="text/javascript">
 
-#dataDisplay {
-  border-radius: 5px;
-  color: red;
-  height: 10vh;
-  padding: 12px 20px;
-}
-time {
-  font-family: monospace;
-  background-color: #EDEEEF;
-  font-size: 90%;
-}
-</style>
+    function setup(htmlComponent) {
 
-<script type="text/javascript">
+        htmlComponent.addEventListener("DataChanged", function(event) {
+        document.getElementById("dataDisplay").innerHTML = htmlComponent.Data;
+        });
+    }
 
-        function setup(htmlComponent) {
-
-            htmlComponent.addEventListener("DataChanged", function(event) {
-            document.getElementById("dataDisplay").innerHTML = htmlComponent.Data;
-            });
-        }
-</script>
+  </script>
 </head>
 
 <body>
-     <div id="prompt">
 
-	<span><label for="prompt"><strong>Data from MATLAB will display here:</strong></label></span>
-	<br/><br/>
 	<div id ="dataDisplay">
-	Please set data in MATLAB...
+	Click RUN to run your program.
 	</div>
 
-     </div>
 </body>
 
 </html>
