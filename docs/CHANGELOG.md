@@ -2,6 +2,18 @@
 
 
 ------
+## Version 0.9.2
+July 1, 2020
+
+#### New/Changed Features
+- Added compile options to terminal commands. Currently they aren't of any actual use. Looking forward to adding meaningful ones.
+- File editor ?????????????
+
+#### Bugs Fixed
+- N/A
+
+
+------
 ## Version 0.9.1
 June 22, 2020
 
