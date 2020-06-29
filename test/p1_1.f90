@@ -1,3 +1,0 @@
-PROGRAM p1_1
-  PRINT *,"Nick"
-END PROGRAM p1_1
