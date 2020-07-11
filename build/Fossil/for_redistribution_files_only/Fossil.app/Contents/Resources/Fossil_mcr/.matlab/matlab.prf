@@ -1,5 +1,5 @@
 #MATLAB Preferences
-#Thu Jun 25 15:35:41 EDT 2020
+#Sat Jul 11 10:26:00 EDT 2020
 DeploytoollastOpenFile=S
 MatlabExitConfirm=Bfalse
 CompilerInstallAgentCache=S/Users/nick/Library/Application Support/.installAgent9.8
@@ -11,15 +11,15 @@ pEZDeployDefaultAuthor=SNick Wade
 CommandWindowClearConfirmation=Btrue
 RLWidthB2_WB_2014b_1_1=I130
 RLWidthB2_WB_2014b_1_0=I130
-EditorMRU8=S/Users/nick/Documents/MATLAB/ProjectEuler/progress/runtimes.m
-EditorMRU7=S/Users/nick/Documents/MATLAB/ProjectEuler/1-20/p03.m
-EditorMRU6=S/Users/nick/Documents/GitHub/mathart/code/lissajous.m
-EditorMRU5=S/Users/nick/Documents/GitHub/capstone/ngc4321/step_1_pa_fit.m
-EditorMRU4=S/Users/nick/Documents/GitHub/capstone/ngc4321/step_2_rotate.m
-EditorMRU3=S/Users/nick/Documents/GitHub/capstone/ngc4321/step_3_vel_fit.m
-EditorMRU2=S/Users/nick/Documents/GitHub/capstone/ngc4321/step_4_reg_fit.m
-EditorMRU1=S/Users/nick/Documents/GitHub/projects/Sudoku/sudoku.m
+EditorMRU8=S/Users/nick/Documents/MATLAB/ProjectEuler/1-20/p03.m
+EditorMRU7=S/Users/nick/Documents/GitHub/mathart/code/lissajous.m
+EditorMRU6=S/Users/nick/Documents/GitHub/capstone/ngc4321/step_1_pa_fit.m
+EditorMRU5=S/Users/nick/Documents/GitHub/capstone/ngc4321/step_2_rotate.m
+EditorMRU4=S/Users/nick/Documents/GitHub/capstone/ngc4321/step_3_vel_fit.m
+EditorMRU3=S/Users/nick/Documents/GitHub/capstone/ngc4321/step_4_reg_fit.m
+EditorMRU2=S/Users/nick/Documents/GitHub/projects/Sudoku/sudoku.m
+EditorMRU1=S/Applications/MATLAB_R2020a.app/toolbox/matlab/ops/ismember.m
 pEZDeployDefaultEmail=Snwade4@jh.edu
 RLPrevInitB2_WB_2014b_1=Btrue
 HasAppendedMlxToFileExtensionsKey=Btrue
-NV_38f9d369c109703789=S1593891014149
+NV_38f9d369c109703789=S1596553288918
