@@ -1,5 +1,5 @@
 #MATLAB Preferences
-#Sat Jul 11 10:26:00 EDT 2020
+#Sun Jul 26 12:22:05 EDT 2020
 DeploytoollastOpenFile=S
 MatlabExitConfirm=Bfalse
 CompilerInstallAgentCache=S/Users/nick/Library/Application Support/.installAgent9.8
@@ -11,14 +11,14 @@ pEZDeployDefaultAuthor=SNick Wade
 CommandWindowClearConfirmation=Btrue
 RLWidthB2_WB_2014b_1_1=I130
 RLWidthB2_WB_2014b_1_0=I130
-EditorMRU8=S/Users/nick/Documents/MATLAB/ProjectEuler/1-20/p03.m
-EditorMRU7=S/Users/nick/Documents/GitHub/mathart/code/lissajous.m
-EditorMRU6=S/Users/nick/Documents/GitHub/capstone/ngc4321/step_1_pa_fit.m
-EditorMRU5=S/Users/nick/Documents/GitHub/capstone/ngc4321/step_2_rotate.m
-EditorMRU4=S/Users/nick/Documents/GitHub/capstone/ngc4321/step_3_vel_fit.m
-EditorMRU3=S/Users/nick/Documents/GitHub/capstone/ngc4321/step_4_reg_fit.m
-EditorMRU2=S/Users/nick/Documents/GitHub/projects/Sudoku/sudoku.m
-EditorMRU1=S/Applications/MATLAB_R2020a.app/toolbox/matlab/ops/ismember.m
+EditorMRU8=S/Users/nick/Documents/GitHub/capstone/ngc4321/step_3_vel_fit.m
+EditorMRU7=S/Users/nick/Documents/GitHub/capstone/ngc4321/step_4_reg_fit.m
+EditorMRU6=S/Users/nick/Documents/GitHub/projects/Sudoku/sudoku.m
+EditorMRU5=S/Applications/MATLAB_R2020a.app/toolbox/matlab/ops/ismember.m
+EditorMRU4=S/Users/nick/Documents/GitHub/Project-Euler/81-99/p96.m
+EditorMRU3=S/Users/nick/Documents/GitHub/mathart/code/rose_curve.m
+EditorMRU2=S/Users/nick/Documents/GitHub/mathart/code/lissajous.m
+EditorMRU1=S/Users/nick/Documents/GitHub/mathart/code/ulam.m
 pEZDeployDefaultEmail=Snwade4@jh.edu
 RLPrevInitB2_WB_2014b_1=Btrue
 HasAppendedMlxToFileExtensionsKey=Btrue
