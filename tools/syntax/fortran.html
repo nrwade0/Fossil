@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-#prompt {
-  font-family: sans-serif;
-  text-align:center;
-  border-radius: 5px;
-  background-color: lightblue;
-  padding: 20px;
-}
+  <style>
+    #prompt {
+      font-family: sans-serif;
+      text-align:center;
+      border-radius: 5px;
+      background-color: lightblue;
+      padding: 20px;
+    }
 
-#dataDisplay {
-  border-radius: 5px;
-  color: red;
-  height: 10vh;
-  padding: 12px 20px;
-}
-</style>
+    #dataDisplay {
+      border-radius: 5px;
+      color: red;
+      height: 10vh;
+      padding: 12px 20px;
+    }
+  </style>
 
-<script type="text/javascript">
+  <script type="text/javascript">
 
-        function setup(htmlComponent) {
-
-            htmlComponent.addEventListener("DataChanged", function(event) {
-            document.getElementById("dataDisplay").innerHTML = htmlComponent.Data;
-            });
-        }
-</script>
+    function setup(htmlComponent) {
+        htmlComponent.addEventListener("DataChanged", function(event) {
+        document.getElementById("dataDisplay").innerHTML = htmlComponent.Data;
+        });
+    }
+  </script>
 </head>
 
 <body>
-     <div id="prompt">
+    <div id="prompt">
 
-	<span><label for="prompt"><strong>Data from MATLAB will display here:</strong></label></span>
-	<br/><br/>
-	<div id ="dataDisplay">
-	Please set data in MATLAB...
-	</div>
+    	<span><label for="prompt">Using FORTRAN Syntax:</label></span>
+    	<br/><br/>
+    	<div id ="dataDisplay">
+    	   Press the CHECK SYNTAX button...
+    	</div>
 
-     </div>
+    </div>
 </body>
 
 </html>
