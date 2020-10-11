@@ -2,7 +2,7 @@ Fossil Executable
 
 1. Prerequisites for Deployment 
 
-Verify that version 9.8 (R2020a) of the MATLAB Runtime is installed.   
+Verify that version 9.9 (R2020b) of the MATLAB Runtime is installed.   
 If not, you can run the MATLAB Runtime installer.
 To find its location, enter
   
@@ -11,7 +11,7 @@ To find its location, enter
 at the MATLAB prompt.
 NOTE: You will need administrator rights to run the MATLAB Runtime installer. 
 
-Alternatively, download and install the Macintosh version of the MATLAB Runtime for R2020a 
+Alternatively, download and install the Macintosh version of the MATLAB Runtime for R2020b 
 from the following link on the MathWorks website:
 
     https://www.mathworks.com/products/compiler/mcr/index.html
@@ -31,14 +31,14 @@ Files to Package for Standalone
        ./run_Fossil.sh <mcr_directory> <argument_list>
        
     at Linux or Mac command prompt. <mcr_directory> is the directory 
-    where version 9.8 of the MATLAB Runtime is installed or the directory where 
+    where version 9.9 of the MATLAB Runtime is installed or the directory where 
     MATLAB is installed on the machine. <argument_list> is all the 
     arguments you want to pass to your application. For example, 
 
-    If you have version 9.8 of the MATLAB Runtime installed in 
-    /mathworks/home/application/v98, run the shell script as:
+    If you have version 9.9 of the MATLAB Runtime installed in 
+    /mathworks/home/application/v99, run the shell script as:
     
-       ./run_Fossil.sh /mathworks/home/application/v98
+       ./run_Fossil.sh /mathworks/home/application/v99
        
     If you have MATLAB installed in /mathworks/devel/application/matlab, 
     run the shell script as:
@@ -69,17 +69,17 @@ Center.
 4. Appendix 
 
 A. Mac systems:
-In the following directions, replace MR/v98 by the directory on the target machine where 
+In the following directions, replace MR/v99 by the directory on the target machine where 
    MATLAB is installed, or MR by the directory where the MATLAB Runtime is installed.
 
 If the environment variable DYLD_LIBRARY_PATH is undefined, set it to the following 
    string:
 
-MR/v98/runtime/maci64:MR/v98/sys/os/maci64:MR/v98/bin/maci64
+MR/v99/runtime/maci64:MR/v99/sys/os/maci64:MR/v99/bin/maci64
 
 If it is defined, set it to the following:
 
-${DYLD_LIBRARY_PATH}:MR/v98/runtime/maci64:MR/v98/sys/os/maci64:MR/v98/bin/maci64
+${DYLD_LIBRARY_PATH}:MR/v99/runtime/maci64:MR/v99/sys/os/maci64:MR/v99/bin/maci64
 
     For more detailed information about setting the MATLAB Runtime paths, see Package and 
    Distribute in the MATLAB Compiler documentation in the MathWorks Documentation Center.
