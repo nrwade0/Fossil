@@ -3,14 +3,15 @@
 
 ------
 ## Version 0.9.2
-July 1, 2020
+October 11, 2020
 
 #### New/Changed Features
-- Added compile options to terminal commands. Currently they aren't of any actual use. Looking forward to adding meaningful ones.
-- File editor ?????????????
+- Removed `compile options` and `folder tree` tabs because they are not currently used.
+- Syntax tab was reverted to a simple click to see what your program looked like. This is a decent short term option (see `BUGS.md`)
+- Updated some screenshots.
 
 #### Bugs Fixed
-- N/A
+- Added a CLEAR OUTPUT button
 
 
 ------
